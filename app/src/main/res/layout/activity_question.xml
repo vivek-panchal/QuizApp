@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+
+    tools:context=".QuestionActivity">
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Enter your quetions">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:progress="0"
+            android:max="10"
+            style="?android:progressBarStyleHorizontal"/>
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/10"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/opt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option1"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/quetion_option"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/opt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option2"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/quetion_option"
+        android:gravity="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/opt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option3"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/quetion_option"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+    </TextView>
+    <TextView
+        android:id="@+id/opt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option4"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/quetion_option"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
